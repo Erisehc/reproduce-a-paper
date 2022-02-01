@@ -1,0 +1,11 @@
+/atrium_autoseg/
+/CardiacSegmentationPropagation/
+/example/
+/scar_learning/data/
+/scar_learning/run_logs/
+/scar_learning/scar_segmentation/
+/scar_learning/scar_identification/
+/scar_learning/convolutional_encoder/
+/segmentation_legacy/data
+/.idea/
+/scar_learning/apnet/results/

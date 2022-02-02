@@ -14,7 +14,7 @@
 ## 2. Data Generation
 This project uses raw DICOM files for the LGE-MRI data and an additional .csv file containing patient covariate and outcome data. These data are subject to HIPAA and can only be shared subject to Institutional Review Board approval. 
 
-`heart_volume.data_process.data_processing_hv_dict(...)` is used to process DICOM files into the universal `HeartVolume` class, which includes slice-by-slice left ventricle myocardium segmentations. For details on the segmentation process, see [Abramson & Popescu et al.][1].
+`heart_volume.data_process.data_processing_hv_dict(...)` is used to process DICOM files into the universal `HeartVolume` class, which includes slice-by-slice left ventricle myocardium segmentations. For details on the segmentation process, see [Popescu et al.][1].
 
 ### SSCAR 
 SSCAR data generators are located in `/scar_learning/apnet/apnet_datagen.py`. 
@@ -55,4 +55,4 @@ Analysis of results was performed in `/scar_learning/apnet/apnet_analysis.py`.
 * The code was optimized to run efficiently on NVIDIA GPUs with 24GB of memory.
 * `/scar_learning/config_data.py` and `/scar_learning/data_process.py` are bespoke to way the raw input data file structure was established. Although the raw data were not provided, these files should aid with understanding of the overall code.
 
-[1]: https://arxiv.org/abs/2010.11081
+[1]: https://doi.org/10.1016/j.cvdhj.2021.11.007
